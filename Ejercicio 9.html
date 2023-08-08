@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Programa para mostrar frase con espacio entre cada letra</h1>
+    <label for="inputFrase"></label>
+    <input type="text" id="inputFrase" onkeydown="handleKeyPress(event)" placeholder="Ingresa una frase" size="20px">
+    <button onclick="mostrarConEspacios()">Mostrar con espacios</button>
+    <p id="resultado"></p>
+
+    <script>
+        function mostrarConEspacios() {
+            var frase = document.getElementById("inputFrase").value;
+            var fraseConEspacios = "";
+            for (var i = 0; i < frase.length; i++) {
+                fraseConEspacios += frase.charAt(i);
+
+                if (i < frase.length - 1) {
+                    fraseConEspacios += " ";
+                }
+            }
+            document.getElementById("resultado").textContent = fraseConEspacios;
+        }
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                mostrarConEspacios();
+                event.preventDefault();
+            }
+        }
+    </script>
+</body>
+</html>
