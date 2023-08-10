@@ -4,7 +4,6 @@ let arreglo2 = [];
 function ejecutar() {
     llenarArreglo(arreglo1);
     llenarArreglo(arreglo2);
-
     document.getElementById("informacion").innerHTML = `
         <p>Arreglo 1 = [${arreglo1}]</p>
         <p>Arreglo 2 = [${arreglo2}]</p>

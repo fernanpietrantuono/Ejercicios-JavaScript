@@ -6,47 +6,58 @@
     <title>Ejercicio 21</title>
   </head>
   <body>
+    <h1 align="center">Registrar persona</h1>
     <form action="">
-      <h1 align="center"><strong> Ingreso de datos</strong></h1>
-      <label for="texto">Ingrese su nombre</label>
-      <input
-        type="text"
-        name="Nombre"
-        id="texto"
-        placeholder="Somebody"
-      /><br />
-      <label for="titulo">Ingrese su edad</label>
-      <input type="number" name="Edad" id="num" placeholder="34" /><br />
-      <label for="género">Seleccione su género</label>
-      <select name="Genero" id="opcion">
-        <option>Prefiero no decir</option>
-        <option>Varón</option>
-        <option>Mujer</option>
-        <option>Otro</option></select
-      ><br />
-      <label for="num">Ingrese su altura (en cm.)</label>
-      <input
-        type="number"
-        name="Altura"
-        id="num"
-        step="number"
-        min="1"
-        placeholder="160"
-      /><br />
-      <label for="num">Ingrese su peso (en kg.)</label>
-      <input
-        type="number"
-        name="Peso"
-        id="num"
-        step="number"
-        min="1"
-        placeholder="80"
-      /><br />
-      <input type="submit" name="Enviar" id="boton" /><br />
+      <div>
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          name="nombre"
+          id="nombre"
+          placeholder="Ingrese su nombre"
+        />
+      </div>
+      <div>
+        <label for="edad">Edad</label>
+        <input
+          type="number"
+          name="edad"
+          id="edad"
+          placeholder="Ingrese su edad"
+        />
+      </div>
+      <div>
+        <label for="sexo">Sexo</label>
+        <select name="Genero" id="opcion">
+          <option value="opcion">Prefiero no decirlo</option>
+          <option value="opcion">Varón</option>
+          <option value="opcion">Mujer</option>
+          <option value="opcion">Otro</option>
+        </select>
+      </div>
+      <div>
+        <label for="Altura">Altura</label>
+        <input
+          type="number"
+          name="altura"
+          id="altura"
+          placeholder="Ingrese su altura en metros"
+        />
+      </div>
+      <div>
+        <label for="Peso">Peso</label>
+        <input
+          type="number"
+          name="peso"
+          id="peso"
+          placeholder="Ingrese su peso en kg"
+        />
+      </div>
+      <div>
+        <button value="Enviar" type="button" id="button">Enviar</button>
+      </div>
+      <div id="informacion"></div>
     </form>
-    <select id="persona">
-      <!-- Opciones de libros serán agregadas aquí desde JavaScript -->
-    </select>
     <script src="Ejercicio 21.js" type="Form"></script>
   </body>
 </html>
