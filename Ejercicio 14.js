@@ -1,8 +1,10 @@
-function Libro(ISBN, titulo, autor, numPag) {
-    this.ISBN = ISBN;
-    this.titulo = titulo;
-    this.autor = autor;
-    this.numPag = numPag;
+class Libro {
+    constructor(ISBN, titulo, autor, numPag) {
+        this.ISBN = ISBN;
+        this.titulo = titulo;
+        this.autor = autor;
+        this.numPag = numPag;
+    }
 }
 function CargarLibro() {
     let ISBN = document.getElementById("isbn").value;

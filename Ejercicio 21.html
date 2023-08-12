@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1 align="center">Registrar persona</h1>
-    <form action="">
+    <form id="formPers" onsubmit="cargarPersona(); return false;">
       <div>
         <label for="nombre">Nombre</label>
         <input
@@ -28,24 +28,24 @@
       </div>
       <div>
         <label for="sexo">Sexo</label>
-        <select name="Genero" id="opcion">
-          <option value="opcion">Prefiero no decirlo</option>
-          <option value="opcion">Varón</option>
-          <option value="opcion">Mujer</option>
-          <option value="opcion">Otro</option>
+        <select name="sexo" id="sexo">
+          <option value="nodice">Prefiero no decirlo</option>
+          <option value="varon">Varón</option>
+          <option value="mujer">Mujer</option>
+          <option value="otro">Otro</option>
         </select>
       </div>
       <div>
-        <label for="Altura">Altura</label>
+        <label for="altura">Altura</label>
         <input
           type="number"
           name="altura"
           id="altura"
-          placeholder="Ingrese su altura en metros"
+          placeholder="Ingrese su altura en cm"
         />
       </div>
       <div>
-        <label for="Peso">Peso</label>
+        <label for="peso">Peso</label>
         <input
           type="number"
           name="peso"
@@ -54,10 +54,14 @@
         />
       </div>
       <div>
-        <button value="Enviar" type="button" id="button">Enviar</button>
+        <input value="submit" type="submit" id="button"></input>
       </div>
-      <div id="informacion"></div>
     </form>
+    <output id="nombrePersona"></output>
+    <output id="edadPersona"></output>
+    <output id="sexoPersona"></output>
+    <output id="alturaPersona"></output>
+    <output id="pesoPersona"></output>
     <script src="Ejercicio 21.js" type="Form"></script>
   </body>
 </html>
