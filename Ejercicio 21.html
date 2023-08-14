@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1 align="center">Registrar persona</h1>
-    <form id="formPers" onsubmit="cargarPersona(); return false;">
+    <form id="formPers">
       <div>
         <label for="nombre">Nombre</label>
         <input
@@ -51,17 +51,18 @@
           name="peso"
           id="peso"
           placeholder="Ingrese su peso en kg"
+          onkeypress="ejecutarAlPresionarEnter(event)"
         />
       </div>
       <div>
-        <input value="submit" type="submit" id="button"></input>
+        <button value="submit" type="submit" id="button">Send</button>
       </div>
     </form>
-    <output id="nombrePersona"></output>
-    <output id="edadPersona"></output>
-    <output id="sexoPersona"></output>
-    <output id="alturaPersona"></output>
-    <output id="pesoPersona"></output>
-    <script src="Ejercicio 21.js" type="Form"></script>
+    <p>Nombre: <span id="nombrePersona"></span></p>
+    <p>Edad: <span id="edadPersona"></span></p>
+    <p>Sexo: <span id="sexoPersona"></span></p>
+    <p>Altura: <span id="alturaPersona"></span></p>
+    <p>Peso: <span id="pesoPersona"></span></p>
+    <script src="Ejercicio 21.js"></script>
   </body>
 </html>
