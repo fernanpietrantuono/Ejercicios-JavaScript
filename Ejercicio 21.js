@@ -36,6 +36,6 @@ function ejecutarAlPresionarEnter(event) {
         edadPersona.textContent = persona.edad;
         sexoPersona.textContent = persona.sexo;
         alturaPersona.textContent = persona.altura;
-        pesoPersona.textContent = persona.peso;    
+        pesoPersona.textContent = persona.peso;
     }
 }
