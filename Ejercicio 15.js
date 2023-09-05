@@ -8,7 +8,7 @@ function ejecutar() {
         return;
     }
     document.getElementById("informacion").innerHTML = `
-    <p>El area es ${area(radio)} cm^2</p>
+    <p>El area es ${area(radio)} cm<sup>2</sup> </p>
     <p>El perimetro es ${perimetro(radio)} cm</p>
     `;
 }
